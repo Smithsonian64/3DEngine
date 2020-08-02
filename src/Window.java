@@ -40,7 +40,7 @@ public class Window extends JFrame {
                 if(e.getKeyCode() == KeyEvent.VK_ESCAPE) System.exit(1);
                 if(e.getKeyCode() == KeyEvent.VK_R) repaint();
                 if(e.getKeyCode() == KeyEvent.VK_T) {
-                    drawPanel.testNumber += 0.1;
+                    drawPanel.testNumber += 1;
                     drawPanel.drawMeshes();
                     System.out.println("redrawing");
                     repaint();
@@ -51,6 +51,11 @@ public class Window extends JFrame {
                     drawPanel.g2d = drawPanel.drawImage.createGraphics();
                     drawPanel.g2d.drawLine(100, 100, 400, 400);
                     repaint();
+                }
+                if(e.getKeyCode() == KeyEvent.VK_A) {
+                    if(drawPanel.animating == false) drawPanel.animating = true;
+                    else drawPanel.animating = false;
+                    drawPanel.animate();
                 }
             }
 

@@ -1,15 +1,17 @@
-public class ProjectionMatrix {
-
-    double[][] elements;
+public class ProjectionMatrix extends Matrix2D{
 
     ProjectionMatrix() {
-        elements = new double[4][4];
+        super(4, 4);
 
         double theta = Math.PI / 2;
 
         double f = 1.0 / Math.tan(theta / 2);
 
-        double a = Window.width / Window.height;
+
+
+        //double a = Window.width / Window.height;
+
+        double a = 1;
 
         double zFar = 1000.0;
         double zNear = 0.1;
@@ -40,6 +42,7 @@ public class ProjectionMatrix {
     }
 
     ProjectionMatrix(double a, double f, double q, double zNear) {
+        super(4,4);
 
         elements = new double[4][4];
 

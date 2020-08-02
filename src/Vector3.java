@@ -14,7 +14,19 @@ public class Vector3 {
 
     }
 
+    Vector3(Vector3 vector3) {
+
+        this.x = vector3.x;
+        this.y = vector3.y;
+        this.z = vector3.z;
+
+    }
+
     Vector3() {
+
+        this.x = 0;
+        this.y = 0;
+        this.z = 0;
 
     }
 
