@@ -2,6 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Vector;
 import java.util.concurrent.TimeUnit;
 
 public class DrawPanel extends JPanel {
@@ -76,6 +79,8 @@ public class DrawPanel extends JPanel {
         Vector3 line2 = new Vector3();
         Vector3 normal = new Vector3();
 
+        Vector<Triangle> triangleSortVector = new Vector<>();
+
         double normalLength;
 
         double lightLength;
@@ -113,9 +118,9 @@ public class DrawPanel extends JPanel {
             currentTriangle.points[1] = rotationMatrixZ.multiplyMatrix(currentTriangle.points[1]);
             currentTriangle.points[2] = rotationMatrixZ.multiplyMatrix(currentTriangle.points[2]);
 
-            currentTriangle.points[0].z += 0 + 3;
-            currentTriangle.points[1].z += 0 + 3;
-            currentTriangle.points[2].z += 0 + 3;
+            currentTriangle.points[0].z += 0 + 10;
+            currentTriangle.points[1].z += 0 + 10;
+            currentTriangle.points[2].z += 0 + 10;
 
             line1.x = currentTriangle.points[1].x - currentTriangle.points[0].x;
             line1.y = currentTriangle.points[1].y - currentTriangle.points[0].y;
@@ -150,6 +155,14 @@ public class DrawPanel extends JPanel {
                 lightDirection.z /= lightLength;
 
                 dotProduct = normal.x * lightDirection.x + normal.y * lightDirection.y + normal.z * lightDirection.z;
+
+                //System.out.println("RED: " + Math.round(-dotProduct * Color.WHITE.getBlue()));
+                //System.out.println("GREEN: " + Math.round(-dotProduct * Color.WHITE.getBlue()));
+                //System.out.println("BLUE: " + Math.round(-dotProduct * Color.WHITE.getBlue()));
+
+                currentTriangle.color = (new Color((int) Math.round(Math.abs(dotProduct) * Color.WHITE.getRed()),
+                        (int) Math.round(Math.abs(dotProduct) * Color.WHITE.getGreen()),
+                        (int) Math.round(Math.abs(dotProduct) * Color.WHITE.getBlue())));
 
                 currentTriangle.points[0] = projectionMatrix.multiplyMatrix(currentTriangle.points[0]);
                 currentTriangle.points[1] = projectionMatrix.multiplyMatrix(currentTriangle.points[1]);
@@ -195,9 +208,11 @@ public class DrawPanel extends JPanel {
                     currentTriangle.points[2].y *= multFactor * Window.height;
                 }
 
-            /*g2d.setColor(Color.WHITE);
+                triangleSortVector.add(currentTriangle);
 
-            int[] xPoints = new int[3];
+
+
+            /*int[] xPoints = new int[3];
             xPoints[0] = (int) currentTriangle.points[0].x;
             xPoints[1] = (int) currentTriangle.points[1].x;
             xPoints[2] = (int) currentTriangle.points[2].x;
@@ -207,23 +222,61 @@ public class DrawPanel extends JPanel {
             yPoints[1] = (int) currentTriangle.points[1].y;
             yPoints[2] = (int) currentTriangle.points[2].y;
 
-            g2d.fillPolygon(xPoints, yPoints, 3);
 
-            g2d.setColor(Color.BLACK);*/
 
-                g2d.drawLine((int) currentTriangle.points[0].x, (int) currentTriangle.points[0].y,
+            g2d.fillPolygon(xPoints, yPoints, 3);*/
+
+            //g2d.setColor(Color.BLACK);
+
+                /*g2d.drawLine((int) currentTriangle.points[0].x, (int) currentTriangle.points[0].y,
                         (int) currentTriangle.points[1].x, (int) currentTriangle.points[1].y);
 
                 g2d.drawLine((int) currentTriangle.points[1].x, (int) currentTriangle.points[1].y,
                         (int) currentTriangle.points[2].x, (int) currentTriangle.points[2].y);
 
                 g2d.drawLine((int) currentTriangle.points[2].x, (int) currentTriangle.points[2].y,
-                        (int) currentTriangle.points[0].x, (int) currentTriangle.points[0].y);
+                        (int) currentTriangle.points[0].x, (int) currentTriangle.points[0].y);*/
             }
 
 
 
+
+
         }
+
+        int[] xPoints = new int[3];
+        int[] yPoints = new int[3];
+
+
+
+        Collections.sort(triangleSortVector, (o1, o2) -> {
+            double zAverage1 = (o1.points[0].z + o1.points[1].z + o1.points[2].z) / 3.0;
+            double zAverage2 = (o2.points[0].z + o2.points[1].z + o2.points[2].z) / 3.0;
+
+            int compareNumber = 0;
+
+            if(zAverage2 - zAverage1 > 0) compareNumber = 1;
+            else if( zAverage2 - zAverage1 < 0) compareNumber = -1;
+
+            return compareNumber;
+        });
+
+        for(Triangle triangle : triangleSortVector) {
+            g2d.setColor(triangle.color);
+
+            xPoints[0] = (int) triangle.points[0].x;
+            xPoints[1] = (int) triangle.points[1].x;
+            xPoints[2] = (int) triangle.points[2].x;
+
+
+            yPoints[0] = (int) triangle.points[0].y;
+            yPoints[1] = (int) triangle.points[1].y;
+            yPoints[2] = (int) triangle.points[2].y;
+
+            g2d.fillPolygon(xPoints, yPoints, 3);
+
+        }
+        //System.out.println("good");
 
 
 

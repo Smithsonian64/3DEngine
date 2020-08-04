@@ -10,4 +10,8 @@ public class Mesh {
 
     }
 
+    Mesh() {
+        triangles = new Vector<>();
+    }
+
 }

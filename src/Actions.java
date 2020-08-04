@@ -32,8 +32,17 @@ public class Actions {
 
         Mesh cube = new Mesh(triangles);
 
-        window1.drawPanel.meshList.add(cube);
+        //Mesh bunny = MeshLoader.createMesh("C:\\Users\\Smith\\Documents\\3DEngine\\bunny.obj");
+
+        //Mesh man = MeshLoader.createMesh("C:\\Users\\Smith\\Documents\\3DEngine\\Male.obj");
+
+        Mesh teapot = MeshLoader.createMesh("C:\\Users\\Smith\\Documents\\3DEngine\\UtahTeapot.obj");
+
+        //window1.drawPanel.meshList.add(cube);
+        window1.drawPanel.meshList.add(teapot);
         window1.drawPanel.drawMeshes();
+
+        //MeshLoader.createMesh("C:\\Users\\Smith\\Documents\\3DEngine\\UtahTeapot.obj");
 
         //window1.drawPanel.drawMeshes();
 

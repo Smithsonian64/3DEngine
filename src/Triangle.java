@@ -1,8 +1,10 @@
+import java.awt.*;
 import java.util.Vector;
 
 public class Triangle {
 
     Vector3[] points;
+    Color color;
 
     Triangle(Vector3 point1, Vector3 point2, Vector3 point3) {
 

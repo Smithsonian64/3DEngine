@@ -1,12 +1,16 @@
 public class Matrix2D {
 
     double[][] elements;
+    int numrows;
+    int numColumns;
 
     //Remember, Row THEN Column
 
-    Matrix2D(int x, int y) {
+    Matrix2D(int columns, int rows) {
 
-        elements = new double[x][y];
+        elements = new double[columns][rows];
+        numrows = rows;
+        numColumns = columns;
 
         for(int i = 0; i < elements.length; i++) {
             for(int j = 0; j < elements[i].length; j++) {
@@ -16,9 +20,21 @@ public class Matrix2D {
 
     }
 
-    public Vector3 multiplyMatrix(Vector3 input) {
+    public Matrix2D multiplyMatrix(Matrix2D input) {
 
-        Vector3 output = new Vector3();
+        Matrix2D output = new Matrix2D(this.numrows, input.numColumns);
+
+        double workingNumber = 0;
+
+        for(int i = 0, j = 0; i < this.numrows; i++, j++) {
+
+            for(int k = 0; k < input.numColumns; k++) {
+                workingNumber += this.elements[i][k] * input.elements[i][k];
+            }
+
+
+
+        }
 
         output.x = input.x * this.elements[0][0] +
                 input.y * this.elements[1][0] +
