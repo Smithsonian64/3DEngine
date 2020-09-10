@@ -2,20 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="397ff4f4-0ea4-4618-9230-09182247d973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Male.OBJ" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UtahTeapot.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bunny.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MeshLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jcuda_10_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jcuda_natives_10_2_0_windows_x86_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jcuda-10.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jcuda-natives-10.2.0-windows-x86_64.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3DEngine/Actions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3DEngine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/3DEngine.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/3DEngine/DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3DEngine/DrawPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Mesh.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3DEngine/Mesh.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/META-INF/3DEngine.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Matrix2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3DEngine/Matrix2D.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3DEngine/Triangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Vector3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3DEngine/Vector3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Matrix2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mesh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mesh.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vector3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vector3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,21 +48,28 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/jcuda-natives-10.2.0-windows-x86_64.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Smith\Documents\3DEngine\libs" />
+      <recent name="C:\Users\Smith\Documents\3DEngine\src" />
       <recent name="C:\Users\Smith\Documents\3DEngine" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Smith\Documents\3DEngine\libs" />
       <recent name="C:\Users\Smith\Documents\3DEngine" />
       <recent name="C:\Users\Smith\Documents\3DEngine\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Cuda (1)">
     <configuration name="Actions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Actions" />
       <module name="3DEngine" />
@@ -69,8 +77,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Cuda (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jcuda.driver.samples.Cuda" />
+      <module name="3DEngine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jcuda.driver.samples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Cuda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cuda" />
+      <module name="3DEngine" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Cuda (1)" />
+        <item itemvalue="Application.Cuda" />
         <item itemvalue="Application.Actions" />
       </list>
     </recent_temporary>
@@ -97,7 +127,9 @@
       <workItem from="1596384542940" duration="4269000" />
       <workItem from="1596389004709" duration="7945000" />
       <workItem from="1596404781579" duration="10207000" />
-      <workItem from="1596505225081" duration="4234000" />
+      <workItem from="1596505225081" duration="4543000" />
+      <workItem from="1599704714278" duration="10242000" />
+      <workItem from="1599716721589" duration="1005000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1596334511459</created>
@@ -106,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596334511459</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactoring">
+      <created>1596550930642</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596550930642</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,33 +153,46 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
   <component name="WindowStateProjectService">
     <state x="736" y="375" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596408155476">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="736" y="375" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596408155476" />
-    <state x="1042" y="518" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596506166078">
+    <state x="1042" y="518" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599717630076">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1042" y="518" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1596506166078" />
-    <state width="2516" height="407" key="GridCell.Tab.0.bottom" timestamp="1596506446181">
+    <state x="1042" y="518" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1599717630076" />
+    <state x="1029" y="573" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1599714682399">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2516" height="407" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1596506446181" />
-    <state width="2516" height="407" key="GridCell.Tab.0.center" timestamp="1596506446180">
+    <state x="1029" y="573" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1440@0.0.2560.1440" timestamp="1599714682399" />
+    <state x="902" y="203" key="CommitChangelistDialog2" timestamp="1596550929628">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2516" height="407" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1596506446180" />
-    <state width="2516" height="407" key="GridCell.Tab.0.left" timestamp="1596506446180">
+    <state x="902" y="203" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1596550929628" />
+    <state x="1009" y="532" key="FileChooserDialogImpl" timestamp="1599717234228">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2516" height="407" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1596506446180" />
-    <state width="2516" height="407" key="GridCell.Tab.0.right" timestamp="1596506446180">
+    <state x="1009" y="532" key="FileChooserDialogImpl/0.0.2560.1440@0.0.2560.1440" timestamp="1599717234228" />
+    <state width="2516" height="407" key="GridCell.Tab.0.bottom" timestamp="1599717727352">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2516" height="407" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1596506446180" />
+    <state width="2516" height="407" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1599717727352" />
+    <state width="2516" height="407" key="GridCell.Tab.0.center" timestamp="1599717727352">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2516" height="407" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1599717727352" />
+    <state width="2516" height="407" key="GridCell.Tab.0.left" timestamp="1599717727352">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2516" height="407" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1599717727352" />
+    <state width="2516" height="407" key="GridCell.Tab.0.right" timestamp="1599717727352">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2516" height="407" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1599717727352" />
     <state width="2516" height="500" key="GridCell.Tab.1.bottom" timestamp="1596420044889">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -157,21 +209,27 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2516" height="500" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1596420044889" />
+    <state x="782" y="365" key="SettingsEditor" timestamp="1599717238882">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="782" y="365" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1599717238882" />
+    <state x="873" y="449" key="Vcs.Push.Dialog.v2" timestamp="1596550935646">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="873" y="449" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1596550935646" />
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/DrawPanel.java</url>
+          <line>153</line>
+          <properties class="DrawPanel" method="animate">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
