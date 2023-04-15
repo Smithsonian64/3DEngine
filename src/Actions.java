@@ -1,7 +1,10 @@
+import javax.swing.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.image.BufferedImage;
 import java.util.Vector;
 
-public class Actions {
-
+public class Actions extends JPanel {
     public static void main(String[] args) {
 
         Window window1 = new Window();
@@ -36,18 +39,21 @@ public class Actions {
 
         //Mesh man = MeshLoader.createMesh("C:\\Users\\Smith\\Documents\\3DEngine\\Male.obj");
 
-        Mesh teapot = MeshLoader.createMesh("C:\\Users\\Smith\\Documents\\3DEngine\\UtahTeapot.obj");
+        Mesh teapot = MeshLoader.createMesh("UtahTeapot.obj");
 
         //window1.drawPanel.meshList.add(cube);
-        window1.drawPanel.meshList.add(teapot);
-        window1.drawPanel.drawMeshes();
+        window1.engine.meshList.add(teapot);
+        //window1.engine.drawMeshes();
 
         //MeshLoader.createMesh("C:\\Users\\Smith\\Documents\\3DEngine\\UtahTeapot.obj");
 
         //window1.drawPanel.drawMeshes();
 
-
+        //window1.engine.run();
+        window1.engine.run();
     }
+
+
 
 
 

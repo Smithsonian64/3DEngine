@@ -1,27 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="397ff4f4-0ea4-4618-9230-09182247d973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jcuda_10_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jcuda_natives_10_2_0_windows_x86_64.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jcuda-10.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jcuda-natives-10.2.0-windows-x86_64.jar" afterDir="false" />
+    <list default="true" id="397ff4f4-0ea4-4618-9230-09182247d973" name="Default Changelist" comment="refactoring">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Camera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UtahTeapot.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3DEngine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/3DEngine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3DEngine/Actions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/3DEngine/DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3DEngine/DrawPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/META-INF/3DEngine.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Matrix2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3DEngine/Matrix2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Mesh.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3DEngine/Mesh.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/ProjectionMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3DEngine/ProjectionMatrix.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3DEngine/Triangle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Vector3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3DEngine/Vector3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Window$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3DEngine/Window$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3DEngine/Window.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Matrix2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vector3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vector3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -36,27 +60,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectId" id="1fYpFXxIRBQ93hAF5W443SLcttC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/jcuda-natives-10.2.0-windows-x86_64.jar!/" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Smith\Documents\3DEngine\libs" />
@@ -69,10 +90,11 @@
       <recent name="C:\Users\Smith\Documents\3DEngine\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Cuda (1)">
+  <component name="RunManager" selected="Application.Actions">
     <configuration name="Actions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Actions" />
       <module name="3DEngine" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -97,14 +119,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Actions" />
+      <item itemvalue="Application.Cuda" />
+      <item itemvalue="Application.Cuda (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Actions" />
         <item itemvalue="Application.Cuda (1)" />
         <item itemvalue="Application.Cuda" />
-        <item itemvalue="Application.Actions" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -130,6 +158,17 @@
       <workItem from="1596505225081" duration="4543000" />
       <workItem from="1599704714278" duration="10242000" />
       <workItem from="1599716721589" duration="1005000" />
+      <workItem from="1606531495020" duration="278000" />
+      <workItem from="1613513950591" duration="624000" />
+      <workItem from="1623175398142" duration="32000" />
+      <workItem from="1624566952260" duration="39000" />
+      <workItem from="1665607807242" duration="497000" />
+      <workItem from="1665608336500" duration="44000" />
+      <workItem from="1665608402887" duration="12000" />
+      <workItem from="1665680694273" duration="14000" />
+      <workItem from="1665681384403" duration="1492000" />
+      <workItem from="1666028651904" duration="10000" />
+      <workItem from="1681542928937" duration="9076000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1596334511459</created>
@@ -149,85 +188,31 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="refactoring" />
     <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="736" y="375" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596408155476">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="736" y="375" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596408155476" />
-    <state x="1042" y="518" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599717630076">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="1042" y="518" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1599717630076" />
-    <state x="1029" y="573" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1599714682399">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="1029" y="573" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1440@0.0.2560.1440" timestamp="1599714682399" />
-    <state x="902" y="203" key="CommitChangelistDialog2" timestamp="1596550929628">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="902" y="203" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1596550929628" />
-    <state x="1009" y="532" key="FileChooserDialogImpl" timestamp="1599717234228">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="1009" y="532" key="FileChooserDialogImpl/0.0.2560.1440@0.0.2560.1440" timestamp="1599717234228" />
-    <state width="2516" height="407" key="GridCell.Tab.0.bottom" timestamp="1599717727352">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="2516" height="407" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1599717727352" />
-    <state width="2516" height="407" key="GridCell.Tab.0.center" timestamp="1599717727352">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="2516" height="407" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1599717727352" />
-    <state width="2516" height="407" key="GridCell.Tab.0.left" timestamp="1599717727352">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="2516" height="407" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1599717727352" />
-    <state width="2516" height="407" key="GridCell.Tab.0.right" timestamp="1599717727352">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="2516" height="407" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1599717727352" />
-    <state width="2516" height="500" key="GridCell.Tab.1.bottom" timestamp="1596420044889">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="2516" height="500" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1596420044889" />
-    <state width="2516" height="500" key="GridCell.Tab.1.center" timestamp="1596420044889">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="2516" height="500" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1596420044889" />
-    <state width="2516" height="500" key="GridCell.Tab.1.left" timestamp="1596420044889">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="2516" height="500" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1596420044889" />
-    <state width="2516" height="500" key="GridCell.Tab.1.right" timestamp="1596420044889">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="2516" height="500" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1596420044889" />
-    <state x="782" y="365" key="SettingsEditor" timestamp="1599717238882">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="782" y="365" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1599717238882" />
-    <state x="873" y="449" key="Vcs.Push.Dialog.v2" timestamp="1596550935646">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="873" y="449" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1596550935646" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/DrawPanel.java</url>
-          <line>153</line>
-          <properties class="DrawPanel" method="animate">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Engine.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

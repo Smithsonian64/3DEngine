@@ -9,6 +9,7 @@ public class Window extends JFrame {
     static int width;
     static int height;
 
+    Engine engine;
     DrawPanel drawPanel;
 
     Window() {
@@ -17,6 +18,8 @@ public class Window extends JFrame {
         height = (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight();
 
         drawPanel = new DrawPanel(width, height);
+
+        engine = new Engine(drawPanel);
 
         this.setSize(width, height);
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -41,7 +44,7 @@ public class Window extends JFrame {
                 if(e.getKeyCode() == KeyEvent.VK_R) repaint();
                 if(e.getKeyCode() == KeyEvent.VK_T) {
                     drawPanel.testNumber += 1;
-                    drawPanel.drawMeshes();
+                    //drawPanel.drawMeshes();
                     System.out.println("redrawing");
                     repaint();
                 }
@@ -50,13 +53,30 @@ public class Window extends JFrame {
                     drawPanel.drawImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
                     drawPanel.g2d = drawPanel.drawImage.createGraphics();
                     drawPanel.g2d.drawLine(100, 100, 400, 400);
-                    repaint();
+                    System.out.println("line");
+
+
                 }
                 if(e.getKeyCode() == KeyEvent.VK_A) {
-                    if(drawPanel.animating == false) drawPanel.animating = true;
-                    else drawPanel.animating = false;
-                    drawPanel.animate();
+                    if(engine.running == false) engine.running = true;
+                    else engine.running = false;
                 }
+
+                if(e.getKeyCode() == KeyEvent.VK_LEFT) {
+                    engine.camera.x += -0.1;
+                }
+                if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
+                    engine.camera.x += 0.1;
+                }
+                if(e.getKeyCode() == KeyEvent.VK_UP) {
+                    engine.camera.z += 0.1;
+                }
+                if(e.getKeyCode() == KeyEvent.VK_DOWN) {
+                    engine.camera.z += -0.1;
+                }
+
+
+
             }
 
             @Override
@@ -64,6 +84,9 @@ public class Window extends JFrame {
 
             }
         });
+
+
+
     }
 
 
