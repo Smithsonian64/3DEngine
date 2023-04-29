@@ -1,3 +1,5 @@
+import org.apache.commons.math4.legacy.linear.RealVector;
+
 public class Vector3 {
 
     double x;
@@ -31,27 +33,15 @@ public class Vector3 {
     public Vector3 multiplyMatrix(Matrix2D input) {
         Vector3 output = new Vector3();
 
-        output.x = this.x * input.elements[0][0] +
-                this.y * input.elements[1][0] +
-                this.z * input.elements[2][0] +
-                input.elements[3][0];
+        output.x = this.x * input.elements[0][0] + this.y * input.elements[1][0] + this.z * input.elements[2][0] + input.elements[3][0];
 
-        output.y = this.x * input.elements[0][1] +
-                this.y * input.elements[1][1] +
-                this.z * input.elements[2][1] +
-                input.elements[3][1];
+        output.y = this.x * input.elements[0][1] + this.y * input.elements[1][1] + this.z * input.elements[2][1] + input.elements[3][1];
 
-        output.z = this.x * input.elements[0][2] +
-                this.y * input.elements[1][2] +
-                this.z * input.elements[2][2] +
-                input.elements[3][2];
+        output.z = this.x * input.elements[0][2] + this.y * input.elements[1][2] + this.z * input.elements[2][2] + input.elements[3][2];
 
-        double w = this.x * input.elements[0][3] +
-                this.y * input.elements[1][3] +
-                this.z * input.elements[2][3] +
-                input.elements[3][3];
+        double w = this.x * input.elements[0][3] + this.y * input.elements[1][3] + this.z * input.elements[2][3] + input.elements[3][3];
 
-        if(w != 0) {
+        if (w != 0) {
             output.x /= w;
             output.y /= w;
             output.z /= w;
@@ -111,6 +101,10 @@ public class Vector3 {
 
     public double getVectorLength() {
         return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z);
+    }
+
+    public String toString() {
+        return "[" + this.x + "\t," + this.y + "\t," + this.z + "]";
     }
 
 }

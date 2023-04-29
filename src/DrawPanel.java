@@ -1,12 +1,6 @@
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Vector;
 
 public class DrawPanel extends JPanel {
 
@@ -20,17 +14,12 @@ public class DrawPanel extends JPanel {
         testNumber = 0;
 
     }
-    @Override
-    public void paint(Graphics g) {
 
+    @Override
+    public void paintComponent(Graphics g) {
 
         g.drawImage(drawImage, 0, 0, null);
 
-        super.repaint();
-
     }
-
-
-
 
 }

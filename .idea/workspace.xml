@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,7 +22,35 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="397ff4f4-0ea4-4618-9230-09182247d973" name="Default Changelist" comment="Im working on it" />
+    <list default="true" id="397ff4f4-0ea4-4618-9230-09182247d973" name="Default Changelist" comment="Last version before apache commons math implementation">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_math4_core_4_0_beta1_sources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jcuda_10_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jcuda_natives_10_2_0_windows_x86_64.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3DEngine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/3DEngine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jcuda-10.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jcuda-natives-10.2.0-windows-x86_64.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Actions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/DrawPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Matrix2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Mesh.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/ProjectionMatrix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Triangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Vector3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Window$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3DEngine/Window.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Matrix2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mesh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mesh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeshLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeshLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectionMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectionMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vector3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vector3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,19 +84,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Smith/IdeaProjects/3DEngine/libs/commons-math4-transform-4.0-beta1.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.27370477&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Smith\IdeaProjects\3DEngine\libs" />
       <recent name="C:\Users\Smith\Documents\3DEngine\libs" />
       <recent name="C:\Users\Smith\Documents\3DEngine\src" />
       <recent name="C:\Users\Smith\Documents\3DEngine" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Smith\IdeaProjects\3DEngine\libs" />
+      <recent name="C:\Users\Smith\IdeaProjects\3DEngine\src" />
       <recent name="C:\Users\Smith\Documents\3DEngine\libs" />
       <recent name="C:\Users\Smith\Documents\3DEngine" />
       <recent name="C:\Users\Smith\Documents\3DEngine\src" />
@@ -150,6 +197,8 @@
       <workItem from="1665681384403" duration="1492000" />
       <workItem from="1666028651904" duration="10000" />
       <workItem from="1681542928937" duration="9499000" />
+      <workItem from="1682772290042" duration="89000" />
+      <workItem from="1682774024118" duration="2633000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1596334511459</created>

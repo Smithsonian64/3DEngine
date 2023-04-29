@@ -3,7 +3,6 @@ import java.util.Vector;
 
 public class Triangle {
 
-
     Vector3[] points;
     Color color;
 
@@ -21,9 +20,21 @@ public class Triangle {
 
         points = new Vector3[3];
 
-        this.points[0] = triangle.points[0];
-        this.points[1] = triangle.points[1];
-        this.points[2] = triangle.points[2];
+        points[0] = new Vector3();
+        points[1] = new Vector3();
+        points[2] = new Vector3();
+
+        this.points[0].x = triangle.points[0].x;
+        this.points[0].y = triangle.points[0].y;
+        this.points[0].z = triangle.points[0].z;
+
+        this.points[1].x = triangle.points[1].x;
+        this.points[1].y = triangle.points[1].y;
+        this.points[1].z = triangle.points[1].z;
+
+        this.points[2].x = triangle.points[2].x;
+        this.points[2].y = triangle.points[2].y;
+        this.points[2].z = triangle.points[2].z;
 
     }
 

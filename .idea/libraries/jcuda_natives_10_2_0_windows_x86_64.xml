@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="jcuda-natives-10.2.0-windows-x86_64">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/jcuda-natives-10.2.0-windows-x86_64.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

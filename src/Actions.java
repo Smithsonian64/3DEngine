@@ -1,13 +1,15 @@
+import javax.imageio.ImageIO;
 import javax.swing.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.image.BufferedImage;
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 import java.util.Vector;
 
 public class Actions extends JPanel {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Window window1 = new Window();
+        Engine engine = window1.engine;
 
         Vector3 point1 = new Vector3(0, 0, 0);
         Vector3 point2 = new Vector3(0, 1, 0);
@@ -35,26 +37,11 @@ public class Actions extends JPanel {
 
         Mesh cube = new Mesh(triangles);
 
-        //Mesh bunny = MeshLoader.createMesh("C:\\Users\\Smith\\Documents\\3DEngine\\bunny.obj");
+        engine.addObject(Object.newObject("skull", "skull.obj"));
+        engine.objectList.get(0).translate(0, -10, -50);
+        engine.objectList.get(0).rotate(0, 0, -Math.PI / 2);
 
-        //Mesh man = MeshLoader.createMesh("C:\\Users\\Smith\\Documents\\3DEngine\\Male.obj");
-
-        Mesh teapot = MeshLoader.createMesh("UtahTeapot.obj");
-
-        //window1.drawPanel.meshList.add(cube);
-        window1.engine.meshList.add(teapot);
-        //window1.engine.drawMeshes();
-
-        //MeshLoader.createMesh("C:\\Users\\Smith\\Documents\\3DEngine\\UtahTeapot.obj");
-
-        //window1.drawPanel.drawMeshes();
-
-        //window1.engine.run();
         window1.engine.run();
     }
-
-
-
-
 
 }

@@ -1,4 +1,4 @@
-public class ProjectionMatrix extends Matrix2D{
+public class ProjectionMatrix extends Matrix2D {
 
     ProjectionMatrix() {
         super(4, 4);
@@ -7,9 +7,7 @@ public class ProjectionMatrix extends Matrix2D{
 
         double f = 1.0 / Math.tan(theta / 2);
 
-
-
-        //double a = Window.width / Window.height;
+        // double a = Window.width / Window.height;
 
         double a = 1;
 
@@ -18,8 +16,7 @@ public class ProjectionMatrix extends Matrix2D{
 
         double q = zFar / (zFar - zNear);
 
-
-        elements[0][0] = a*f;
+        elements[0][0] = a * f;
         elements[0][1] = 0;
         elements[0][2] = 0;
         elements[0][3] = 0;
@@ -36,17 +33,17 @@ public class ProjectionMatrix extends Matrix2D{
 
         elements[3][0] = 0;
         elements[3][1] = 0;
-        elements[3][2] = -zNear*q;
+        elements[3][2] = -zNear * q;
         elements[3][3] = 0;
 
     }
 
     ProjectionMatrix(double a, double f, double q, double zNear) {
-        super(4,4);
+        super(4, 4);
 
         elements = new double[4][4];
 
-        elements[0][0] = a*f;
+        elements[0][0] = a * f;
         elements[0][1] = 0;
         elements[0][2] = 0;
         elements[0][3] = 0;
@@ -63,7 +60,7 @@ public class ProjectionMatrix extends Matrix2D{
 
         elements[3][0] = 0;
         elements[3][1] = 0;
-        elements[3][2] = -zNear*q;
+        elements[3][2] = -zNear * q;
         elements[3][3] = 0;
 
     }
